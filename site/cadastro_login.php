@@ -1,4 +1,6 @@
-
+<?php
+include '../conexao.php'; 
+?>
 <!doctype html>
 <html lang="pt-br">
   <head>
@@ -19,40 +21,40 @@
         <div  class="d-flex align-items-center bd-highlight  justify-content-center">
             <div class="card">
                 <div class="card-header">
-                    <form class="form-row">
-                        <h1 class="h3 mb-3 font-weight-normal">Login</h1>
-                          <div class="row">  
-                              <label for="inputNome" class="sr-only">Nome</label>
-                                <form>
-                                  <div class="row">
-                                    <div class="col">
-                                      <input type="text" class="form-control" placeholder="Nome">
-                                    </div>
-                                    <div class="col">
-                                      <input type="text" class="form-control" placeholder="Sobrenome">
-                                    </div>
-                                  </div>
-                                </form>
-                          </div>
-                                <div>  
+                    <form class="form-row" method="post" action="../functions/cadastro.php">
+                      <h1 class="h3 mb-3 font-weight-normal">Login</h1>
+                        <div class="row">  
+                          <label for="inputNome" class="sr-only">Nome</label>
                           
-                            <label for="inputEmail" class="sr-only">Endereço de email</label>
-                            <input type="email" id="inputEmail" class="form-control" placeholder="Seu email" required autofocus>
-                          
+                              <div class="row">
+                                <div class="col">
+                                  <input type="text" id="nome" name="nome" class="form-control" placeholder="Nome">
+                                </div>
+                                <div class="col">
+                                  <input type="text" id="sobrenome" name="sobrenome" class="form-control" placeholder="Sobrenome">
+                                </div>
+                              </div>
+                            
                         </div>
                         <div>
-                          
-                            <label for="inputPassword6" class="sr-only">Senha</label>
-                            <input type="password" id="inputPassword6" class="form-control" placeholder="Sua Senha" aria-describedby="passwordHelpInline">
-                            <input type="password1" id="inputPassword67" class="form-control" placeholder="Confirmar Senha" aria-describedby="passwordHelpInline">  
-                          
+                          <label for="email" class="sr-only">Endereço de email</label>
+                          <input type="email" id="email" name="email" class="forms form-control" placeholder="Seu email" required autofocus></div>
+                        <div>
+                          <label for="password" class="sr-only">Senha</label>
+                            <input type="password" id="senha" name="senha" class="forms form-control" placeholder="Sua Senha" aria-describedby="passwordHelpInline">
+                            <input type="password" id="confirmar_senha" name="confirmar_senha" class="forms form-control" placeholder="Confirmar Senha" aria-describedby="passwordHelpInline">  
                         </div>
-                        <div class="m-3">
-                          
-                            <label class="m-3">Já Possui Login?</label><a href="http://localhost/projetofilipe/site/cadastro_login.php" class="btn m-3 btn-sm btn-primary "> Login</a>
+                        <div >
+                          <label for="cpf" class="sr-only">CPF</label>
+                          <input type="text" id="cpf" name="cpf"  pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" title="Digite o CPF no formato nnn.nnn.nnn-nn" class="forms form-control" placeholder="CPF" aria-describedby="passwordHelpInline">
+                        </div>
+                        <div class="boton-login ">
+                        <button href="http://localhost/phptest/cadastroprodutos.php" class="btn btn-primary btn-xl mb-2" id="submitButton" onclick="validar()" type="submit"> Cadastrar </button></div>
+                        <div class="boton-login m-3">
+                            <label class="m-3">Já Possui Login?</label><a href="http://localhost/Novoprojetologin/login.php" class="btn m-3 btn-sm btn-primary "> Login</a>
                             </label>
-                          
                         </div>
+                        
                     </form>
                 </div>
             </div>

@@ -1,4 +1,6 @@
-
+<?php
+include 'conexao.php'; 
+?>
 <!doctype html>
 <html lang="pt-br">
   <head>
@@ -20,7 +22,7 @@
             <div class="card">
                 <div class="card-header">
                     <form class="form">
-                        <h1 class="h3 mb-3 font-weight-normal">Login</h1>
+                        <h1 class="h3 font-weight-normal">Login</h1>
                         <label for="inputEmail" class="sr-only">Endereço de email</label>
                         <input type="email" id="inputEmail" class="form-control" placeholder="Seu email" required autofocus>
                         <label for="inputPassword" class="sr-only">Senha</label>
@@ -35,7 +37,7 @@
                         <div class="footerform">
                         <label>
                         </div>
-                        <label>Ainda Não Possui Conta?</label><a href="http://localhost/projetofilipe/site/cadastro_login.php" class="btn btn-sm btn-primary ">  Cadastre-se</a>
+                        <label>Ainda Não Possui Conta?</label><a href="http://localhost/Novoprojetologin/site/cadastro_login.php" class="btn btn-sm btn-primary ">  Cadastre-se</a>
                         </label>
                         </div>
                     </form>
