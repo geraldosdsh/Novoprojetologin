@@ -1,0 +1,148 @@
+html,
+body {
+  font-family: Ubuntu, Arial;
+  box-sizing: border-box;
+  box-shadow: #4c6d63;
+  background-color: #7d8f89;
+}
+
+#header {
+  border-radius: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  margin: 50px;
+  background: #04b17d;
+  overflow-y: auto;
+  width: 1325px;
+  transition: all ease-in-out 0.5s;
+  padding: 0 15px;
+  z-index: 9997;
+  box-shadow: #4c6d63;
+}
+.btn {
+  border-radius: 50px;
+  width: 200px;
+  border: 1px solid #fff;
+}
+.lgg {
+  margin-top: 175px;
+  color: #04b17d;
+}
+.inputs {
+  box-sizing: border-box;
+  margin-left: 350px;
+  justify-content: center;
+  width: 300px;
+  text-align: center;
+  align-items: center;
+}
+.Bto {
+  box-sizing: border-box;
+}
+
+#inicio {
+  align-items: center;
+  text-align: center;
+  margin-top: 50%;
+}
+#main {
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  background-color: aliceblue;
+  height: 100%;
+  width: 1010px;
+  position: absolute;
+  box-shadow: #4c6d63;
+  margin-left: 300px;
+}
+.titulo {
+  color: white;
+}
+.logesquerda {
+  box-sizing: border-box;
+  text-align: center;
+  margin-left: 1%;
+  margin-right: 79%;
+  margin-top: 15%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.copyright {
+  background-color: #04b17d;
+}
+#footer {
+  border-radius: 40px;
+  padding: 15px;
+  color: #fff;
+  font-size: 14px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  margin: 50px;
+  z-index: 9999;
+  background: #04b17d;
+  transition: 0.3s;
+}
+
+@media (max-width: 1012px) {
+  #footer {
+    position: static;
+    width: auto;
+    padding: 20px 15px;
+  }
+}
+
+/*Don't forget to add Font Awesome CSS : "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"*/
+input[type="text"] {
+  width: 100%;
+  border: 2px solid #aaa;
+  border-radius: 4px;
+  margin: 8px 0;
+  outline: none;
+  padding: 8px;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: dodgerBlue;
+  box-shadow: 0 0 8px 0 dodgerBlue;
+}
+
+.inputWithIcon input[type="text"] {
+  padding-left: 40px;
+}
+
+.inputWithIcon {
+  position: relative;
+}
+
+.inputWithIcon i {
+  position: absolute;
+  left: 0;
+  top: 8px;
+  padding: 9px 8px;
+  color: #aaa;
+  transition: 0.3s;
+}
+
+.inputWithIcon input[type="text"]:focus + i {
+  color: dodgerBlue;
+}
+
+.inputWithIcon.inputIconBg i {
+  background-color: #aaa;
+  color: #fff;
+  padding: 9px 4px;
+  border-radius: 4px 0 0 4px;
+}
+
+.inputWithIcon.inputIconBg input[type="text"]:focus + i {
+  color: #fff;
+  background-color: dodgerBlue;
+}
