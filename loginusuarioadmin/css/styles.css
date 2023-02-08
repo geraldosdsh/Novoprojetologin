@@ -15,7 +15,7 @@ body {
   margin: 50px;
   background: #04b17d;
   overflow-y: auto;
-  width: 1325px;
+  width: 1450px;
   transition: all ease-in-out 0.5s;
   padding: 0 15px;
   z-index: 9997;
@@ -32,9 +32,9 @@ body {
 }
 .inputs {
   box-sizing: border-box;
-  margin-left: 350px;
+  margin-left: 34%;
   justify-content: center;
-  width: 300px;
+  width: 350px;
   text-align: center;
   align-items: center;
 }
@@ -46,6 +46,7 @@ body {
   align-items: center;
   text-align: center;
   margin-top: 50%;
+  justify-content: center;
 }
 #main {
   box-sizing: border-box;
@@ -53,10 +54,10 @@ body {
   justify-content: center;
   background-color: aliceblue;
   height: 100%;
-  width: 1010px;
+  width: 1035px;
   position: absolute;
   box-shadow: #4c6d63;
-  margin-left: 300px;
+  margin-left: 400px;
 }
 .titulo {
   color: white;
@@ -64,9 +65,8 @@ body {
 .logesquerda {
   box-sizing: border-box;
   text-align: center;
-  margin-left: 1%;
-  margin-right: 79%;
   margin-top: 15%;
+  width: 400px;
   position: absolute;
   top: 0;
   left: 0;

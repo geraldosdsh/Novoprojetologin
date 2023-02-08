@@ -7,11 +7,12 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>Template de login, usando Bootstrap.</title>
+    <link rel="stylesheet" type="text/css"
+        href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css" />
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+
 </head>
 
 <body>
@@ -49,8 +50,8 @@
                                     <i class="fa fa-lock fa-lg fa-fw" aria-hidden="true"></i>
                                 </div>
 
-                                <button class="btn btn-lg text-center btn-primary btn-block m-3"
-                                    type="submit">Login</button>
+                                <button class="btn btn-success  btn-lg text-center btn-block m-3" type="submit">SING
+                                    UP</button>
                             </div>
                         </form>
                     </section>
